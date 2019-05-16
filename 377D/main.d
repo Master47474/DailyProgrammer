@@ -1,22 +1,19 @@
 import std.stdio;
-
+/*
 int fit1(int X, int Y, int x, int y);
 int fit2(int X, int Y, int x, int y);
 int fit3(int X, int Y, int Z, int x, int y, int z);
+*/
 int fitn(int[]  xY, int[] xy);
 void permute(int[]* a, int l, int r, int[][]* tot, int* x);
 void swap(int* x, int* y);
 
 
 void main(){
-  writeln(fit2(12345,678910,1112,1314));
-  writeln(fit3(12,34,56,7,8,9));
-  writeln(fitn([3,4],[1,2]));
+  writeln(fitn([9,8,9,3],[3,2,2,2]));
 }
 
-
-
-
+/*
 int fit1(int X, int Y, int x, int y){
   int mx = (X/x);
   int my = (Y/y);
@@ -44,7 +41,7 @@ int fit3(int X, int Y, int Z, int x, int y, int z){
   }
   return max;
 }
-
+*/
 int fitn(int[]  xY, int[] xy){
   int n = xy.length;
   int[][] aar;
